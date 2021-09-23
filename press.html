@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <script>
+            function usernamePassword() {
+                var username = document.getElementById("uname");
+                var usernameB = username.value;
+                var pwrd = document.getElementById("psw");
+                var pwrdB = username.value;
+                if((usernameB === "admin") && (prwdB === "password")){
+                    alert("Success")
+                    return true
+                }
+                alert("Access Failure")
+                return false
+            }
+        </script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>
+            USSY     <a class="home" href="index.html">__</a>
+        </h1>
+        <p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            Welcome Media <br>
+            This content will be arriving soon!<br>
+            <br>
+            <br>
+            Most recent speech:<br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6KKi8yvqDVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <footer>
+            Options: <br>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" id="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" id="psw" required>
+                
+              <a href="milportal.html" onclick="return usernamePassword()" type="submit">Submit</a>
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+          </form>
+        </div>
+        
+        <script>
+        
+        var modal = document.getElementById('id01');
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+        </footer>
+    </body>
+</html>
