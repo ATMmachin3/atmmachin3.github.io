@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("passwordBox");
+            var passwordText = password.value;
+            if(passwordText == "A6B5C4D3E2F1G0") {
+                return true;
+            }
+            alert("Access denied! Incorrect passcode.")
+            return false;
+        }
+    </script>
+    <script>
+        function usernamePassword() {
+            var username = document.getElementById("uname");
+            var usernameB = username.value;
+            var pwrd = document.getElementById("psw");
+            var pwrdB = username.value;
+            if((usernameB === "admin") && (prwdB === "password")){
+                alert("Success")
+                return true
+            }
+            alert("Access Failure")
+            return false
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>
+    USSY     <a class="home" href="index.html">__</a>
+</h1>
+<p>&#10240;</p>
+<p>&#10240;</p>
+<p>Welcome <br>
+<br>
+Welcome to the USSY, we are an independent nation focussed on progression of democracy and freedom for the people.<br>
+</p>
+<h2><a  href="timetable.html">Timetables</a></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nibh est, vulputate eu ligula pharetra, aliquet maximus velit. Vestibulum id ante eget nunc volutpat egestas nec eu massa. Maecenas consectetur purus est, nec cursus neque tincidunt. <br>
+<br>
+Here will be information about what this website will offer it will likely contain: <br>
+• Lorum <br>
+• Lorum ipsum dolar <br>
+• Lorum ipsum dolar sit amen <br>
+• Lorum ipsum <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada purus id justo vestibulum rutrum. In facilisis. <br>
+<br>
+<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum arcu erat, rhoncus non ultrices ac, venenatis.<br>
+<br>
+<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+<br>
+<br>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 8</div>
+      <img src="0-democracy.png" style="width:100%">
+      <div class="text">The people's will is democracy</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 8</div>
+      <img src="0-freedom.png" style="width:100%">
+      <div class="text">Freedom!</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 8</div>
+      <img src="0-glory.png" style="width:100%">
+      <div class="text">Glory to USSY</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="0-power.png" style="width:100%">
+        <div class="text">All power to the Soviets</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="0-realenlist.png" style="width:100%">
+        <div class="text">Men take arms for everyone</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="0-techenlist.png" style="width:100%">
+        <div class="text">Use tech for the right cause</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="0-value.png" style="width:100%">
+        <div class="text">Value time, & History</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="0-will.png" style="width:100%">
+        <div class="text">"I believe in one thing,<br> the power of the human will"</div>
+    </div>
+
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); 
+    }
+    </script>
+
+</p>
+<p>Enter a Press Key</p>
+<p>
+    Key:<input id="passwordBox" type="password">
+<a href="press.html" onclick="return checkPassword();">
+    Go!
+</a>
+</p>
+<footer>
+    Options: <br>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" required>
+        
+      <a href="milportal.html" onclick="return usernamePassword()" type="submit">Submit</a>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</footer>
+</body>
+</html>
