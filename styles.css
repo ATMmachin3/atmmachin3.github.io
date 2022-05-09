@@ -42,7 +42,7 @@ label{
     color: white;
 }
 a:hover{
-    color: chartreuse;
+    color: firebrick;
 }
 a:visited{
     color: orchid;
@@ -208,7 +208,7 @@ line{
   .menu__item {
     display: block;
     padding: 12px 24px;
-    color: #333;
+    color: darkcyan;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
